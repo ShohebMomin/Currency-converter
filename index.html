@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Currency Converter</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Currency Converter</h1>
+        <form action="">
+            <label for="amount">Enter Amount</label>
+            <input id="amount" type="text" value="100">
+            <div class="dropdown">
+                <div class="from">
+                    <p>From</p>
+                    <div class="selector-container">
+                        <img src="https://flagsapi.com/IN/shiny/64.png" alt="country-flag">
+                        <select name="from" id="">
+                           
+                        </select>
+                    </div>
+                </div>
+                <i class="fa-solid fa-arrow-right-arrow-left"></i>
+                <div class="to">
+                    <p>To</p>
+                    <div class="selector-container">
+                        <img src="https://flagsapi.com/US/shiny/64.png" alt="country-flag">
+                        <select name="to" id="">
+                            
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <p class="message">One Dollor = 80 Rupees</p>
+            <button id="btn">Get Exchange Rate</button>
+        </form>
+    </div>
+<script type="module" src="script.js"></script>
+<script type="module" src="codes.js"></script>
+
+</body>
+</html>
