@@ -7,18 +7,18 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Currency Converter</title>
 </head>
-<body>
+<body id="body">
     <div class="container">
         <h1>Currency Converter</h1>
         <form action="">
             <label for="amount">Enter Amount</label>
-            <input id="amount" type="text" value="100">
+            <input id="amount" type="text" value="1">
             <div class="dropdown">
                 <div class="from">
                     <p>From</p>
                     <div class="selector-container">
                         <img src="https://flagsapi.com/IN/shiny/64.png" alt="country-flag">
-                        <select name="from" id="">
+                        <select name="from" id="" class="myDropdown">
                            
                         </select>
                     </div>
@@ -28,16 +28,17 @@
                     <p>To</p>
                     <div class="selector-container">
                         <img src="https://flagsapi.com/US/shiny/64.png" alt="country-flag">
-                        <select name="to" id="">
+                        <select name="to" id="" class="myDropdown">
                             
                         </select>
                     </div>
                 </div>
             </div>
-            <p class="message">One Dollor = 80 Rupees</p>
-            <button id="btn">Get Exchange Rate</button>
+            <p class="message"></p>
+            <button id="btn" class="btn">Get Exchange Rate</button>
         </form>
     </div>
+    <div><button class="theme-btn">Dark Mode</button></div>
 <script type="module" src="script.js"></script>
 <script type="module" src="codes.js"></script>
 
